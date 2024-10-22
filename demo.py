@@ -22,6 +22,6 @@ img2 = cv2.imread('data_literature/img2.png')
 images = [img1, img2] # supports both cv2 and PIL images
 
 molecule_results = model.extract_molecules_from_figures(images)
-# reaction_results = model.extract_reactions_from_figures(images)
-# bbox_results = model.extract_molecule_bboxes_from_figures(images)
-# coref_results = model.extract_molecule_corefs_from_figures(images)
+reaction_results = model.extract_reactions_from_figures(images)
+bbox_results = model.extract_molecule_bboxes_from_figures(images)
+coref_results = model.extract_molecule_corefs_from_figures(images)
